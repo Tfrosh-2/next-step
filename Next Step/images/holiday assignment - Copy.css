@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: all 0.5 linear;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px grey;
+    border-radius: 4px;
+    
+    
+    
+}
+
+header .logo{
+    width: 15%;
+    height: 100%;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    border-radius: 1px;
+    
+}
+
+header .logo img{
+    width: 50px;
+    height: 50px;
+}
+
+header .logo #menu-btn{
+    font-size: 30px;
+    display: none;
+
+}
+
+
+
+header nav{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+header nav .menu{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header nav .menu #close-btn{
+    font-size: 30px;
+    display: none;
+
+}
+
+
+
+header nav .menu li{
+    list-style: none;
+    
+
+}
+
+header nav .menu li a{
+    color: #1E2E3D;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3;
+}
+
+
+header nav .menu li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    transition: all 0.3;
+    background-color: #1E2E3D;
+}
+   
+
+header nav .menu li a:hover::after{
+    transition: all 0.3;
+    width:100%; 
+}
+
+header nav div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+header nav div a{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #1E2E3D;
+    text-decoration: none;
+    border: 1px solid #1E2E3D;
+}
+
+header nav div a:hover{
+    background-color: #1E2E3D;
+    color: white;
+  
+}
+
+
+@media (max-width:500px) {
+    header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 1px grey;
+        border-radius: 4px;
+        color: #1E2E3D;
+        background-color: white;
+        
+        
+    }
+    
+    header .logo{
+        width: 100%;
+        height: 100%;
+        background-color:white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        border-radius: 1px;
+        
+    }
+    
+    header .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    header .logo #menu-btn{
+        font-size: 30px;
+        display: flex;
+    
+    }
+    
+    
+    
+    header nav{
+        width: 60%;
+        height: 60%;
+        display: none;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;  
+        background-color: white;
+        
+    }
+    
+    
+    header nav .menu{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    
+    }
+    
+    header nav #close-btn{
+        font-size: 30px;
+        display: flex;
+       position: absolute;
+       top: 20px;
+       left: 80%;
+
+        
+    
+    }
+    
+    
+    
+    header nav .menu li{
+        list-style: none;
+        
+    
+    }
+    
+    header nav .menu li a{
+        color: #1E2E3D;
+        font-size: 15px;
+        position: relative;
+        text-decoration: none;
+        transition: all 0.3;
+    }
+    
+    
+    header nav .menu li a::after{
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        top: 23px;
+        left: 0;
+        transition: all 0.3;
+        background-color: #1E2E3D;
+    }
+       
+    
+    header nav .menu li a:hover::after{
+        transition: all 0.3;
+        width:100%; 
+    }
+    
+    header nav div{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+      
+    }
+    
+    header nav div a{
+        width: 60%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #1E2E3D;
+        text-decoration: none;
+        border: 1px solid #1E2E3D;
+    }
+    
+    header nav div a:hover{
+        background-color: #1E2E3D;
+        color: white;
+      
+    }
+        
+}
+   
